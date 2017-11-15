@@ -1,3 +1,4 @@
 # tweetpy
-tweet using python script
+tweet using python script  
+
 credits to http://nodotcom.org/python-twitter-tutorial.html
