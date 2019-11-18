@@ -7,11 +7,11 @@ def get_api(cfg):
 
 def main():
   # Fill in the values noted in previous step here
-  cfg = { 
+  cfg = {
     "consumer_key"        : "VALUE",
     "consumer_secret"     : "VALUE",
     "access_token"        : "VALUE",
-    "access_token_secret" : "VALUE" 
+    "access_token_secret" : "VALUE"
     }
 
   api = get_api(cfg)
@@ -20,10 +20,10 @@ def main():
     image_path=raw_input("Type path for image :")
     tweet=raw_input("Type your tweet:")
     status = api.update_with_media(image_path, tweet)
-    
+
 
   tweet = raw_input("Type quit to quit\nType image to tweet with image\nEnter your tweet :")
-  
+
   while tweet !='quit':
     if tweet !='image':
       status = api.update_status(status=tweet)
@@ -31,15 +31,15 @@ def main():
     elif tweet == 'image':
       tweet_image()
       tweet = raw_input("Type quit to quit\nEnter your tweet :")
-      
-    
+
+
   print("Bye!!")
-  
-  
-  
+  print("Bye!!")
+
+
+
   # Yes, tweet is called 'status' rather confusing
   #Some edit
 
 if __name__ == "__main__":
   main()
-
